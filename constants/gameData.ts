@@ -5,7 +5,7 @@ export const CREEDS: Question[] = [
   { japanese: "どうせやるなら、面白おかしく", romaji: "douse yaru nara omoshiro okashiku" },
   { japanese: "礼儀は正しく、腰低く", romaji: "reigi wa tadashiku koshi hikuku" },
   { japanese: "なってみせるよダントツに", romaji: "natte miseru yo dantotsu ni" },
-  { japanese: "リスクを恐れちゃつまらない", romaji: "risuku o osorecha tsumaranai" },
+  { japanese: "リスクを恐れちゃつまらない", romaji: "risuku wo osorecha tsumaranai" },
   { japanese: "全力で楽しくやろう", romaji: "zenryoku de tanoshiku yarou" },
 
 ];
