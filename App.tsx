@@ -58,7 +58,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-cover bg-center text-white font-sans" style={{ backgroundImage: "url('./public/image/credo.jpg')" }}>
+    <div className="w-full h-screen bg-cover bg-center text-white font-sans" style={{ backgroundImage: "url('/image/credo.jpg')" }}>
       <div className="w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
         <div className="w-[1024px] h-[768px] relative overflow-hidden shadow-2xl shadow-cyan-400/20 border-2 border-cyan-400/50 rounded-lg">
           {renderScreen()}

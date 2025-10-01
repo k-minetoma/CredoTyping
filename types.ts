@@ -27,10 +27,10 @@ export interface ScoreEntry {
 export const CHARACTER_DATA = {
     'あなた': {
         name: '新入社員',
-        image: './public/image/newcomer.png',
+        image: '/image/newcomer.png',
     },
     '社長': {
         name: '社長',
-        image: './public/image/CEO.png',
+        image: '/image/CEO.png',
     }
 };
