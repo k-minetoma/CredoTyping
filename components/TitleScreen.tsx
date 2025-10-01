@@ -38,7 +38,6 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onGameStart, onShowRanking })
               style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}>
             クレド爆誕
           </h1>
-          <p className="text-2xl text-cyan-300 mt-2">Kredo Bakutan</p>
         </div>
         <div className="flex flex-col items-center space-y-6">
           <Button onClick={handleStart}>ゲーム開始</Button>

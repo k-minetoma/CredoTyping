@@ -198,7 +198,7 @@ const GameScreen: React.FC<GameScreenProps> = ({ onGameEnd }) => {
 
       <div className="w-full text-center flex-grow flex items-center justify-center flex-col">
         <h2 className="text-6xl font-black text-gray-700 drop-shadow-sm mb-4">{currentQuestion?.japanese}</h2>
-        <div className={`bg-white/80 backdrop-blur-sm border-4 rounded-lg p-6 w-full max-w-4xl text-5xl font-mono tracking-widest text-center shadow-lg transition-colors duration-200 ${inputStateClasses[inputState]}`}>
+        <div className={`bg-white/80 backdrop-blur-sm border-4 rounded-lg p-6 w-full max-w-4xl text-4xl font-mono tracking-widest text-center shadow-lg transition-colors duration-200 ${inputStateClasses[inputState]}`}>
             {renderRomaji()}
         </div>
       </div>
