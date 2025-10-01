@@ -7,22 +7,15 @@ export const playTypingSound = () => {
   audio.play();
 };
 
-// export const playMissSound = () => {
-//   const audio = new Audio('/music/miss.mp3');
-//   audio.play();
-// };
-
-// export const playConfirmSound = () => {
-//   const audio = new Audio('/music/confirm.mp3');
-//   audio.play();
-// };
-
-// export const playClearSound = () => {
-//   const audio = new Audio('/music/clear.mp3');
-//   audio.play();
-// };
+let currentBGM: HTMLAudioElement | null = null;
 
 export const playBGM = (track: 'title' | 'story' | 'game') => {
+  // まず前のBGMを止める
+  if (currentBGM) {
+    currentBGM.pause();
+    currentBGM.currentTime = 0;
+  }
+
   let src = '';
   switch (track) {
     case 'title':
@@ -35,12 +28,17 @@ export const playBGM = (track: 'title' | 'story' | 'game') => {
       src = '/music/game.mp3';
       break;
   }
-  const bgm = new Audio(src);
-  bgm.loop = true;
-  bgm.play();
+
+  currentBGM = new Audio(src);
+  currentBGM.loop = true;
+  currentBGM.play();
 };
 
 export const stopBGM = () => {
-  console.log("BGM Stop");
+  if (currentBGM) {
+    currentBGM.pause();
+    currentBGM.currentTime = 0;
+    currentBGM = null;
+  }
 };
 

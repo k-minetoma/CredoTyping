@@ -1,12 +1,13 @@
 import { Question, Dialogue } from '../types';
 
 export const CREEDS: Question[] = [
-  { japanese: "挑戦を恐れない", romaji: "chousen o osorenai" },
-  { japanese: "顧客第一主義", romaji: "kokyaku daiichi shugi" },
-  { japanese: "仲間と成長する", romaji: "nakama to seichou suru" },
-  { japanese: "誠実に行動する", romaji: "seijitsu ni koudou suru" },
-  { japanese: "地域社会に貢献する", romaji: "chiiki shakai ni kouken suru" },
-  { japanese: "人生まるごと楽しむ", romaji: "jinsei marugoto tanoshimu" },
+    { japanese: "圧倒的に結果を出そう", romaji: "attouteki ni kekka o dasou" },
+  { japanese: "どうせやるなら、面白おかしく", romaji: "douse yaru nara, omoshiro okashiku" },
+  { japanese: "礼儀は正しく、腰低く", romaji: "reigi wa tadashiku, koshi hikuku" },
+  { japanese: "なってみせるよダントツに", romaji: "natte miseru yo dantotsu ni" },
+  { japanese: "リスクを恐れちゃつまらない", romaji: "risuku o osorecha tsumaranai" },
+  { japanese: "全力で楽しくやろう", romaji: "zenryoku de tanoshiku yarou" },
+
 ];
 
 export const STORY_DATA: { opening: Dialogue[]; ending: Record<string, Dialogue[]> } = {
