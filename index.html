@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クレド爆誕</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800;900&display=swap');
+      body {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+      }
+      .animated-gradient {
+        background: linear-gradient(-45deg, #e0f7fa, #ffffff, #e1f5fe, #e0f7fa);
+        background-size: 400% 400%;
+        animation: animated-gradient 15s ease infinite;
+      }
+      @keyframes animated-gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .animate-clear-effect {
+        animation: clear-effect 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
+      @keyframes clear-effect {
+        0% { transform: scale(0.5); opacity: 0; }
+        50% { transform: scale(1.2); opacity: 1; }
+        100% { transform: scale(1.5); opacity: 0; }
+      }
+      .combo-flash-10 {
+        animation: combo-flash-blue 0.7s ease-out;
+      }
+      .combo-flash-20 {
+        animation: combo-flash-green 0.7s ease-out;
+      }
+      .combo-flash-30 {
+        animation: combo-flash-orange 0.7s ease-out;
+      }
+      @keyframes combo-flash-blue {
+        0% { box-shadow: inset 0 0 0 0 rgba(0, 191, 255, 0); }
+        50% { box-shadow: inset 0 0 100px 20px rgba(0, 191, 255, 0.5); }
+        100% { box-shadow: inset 0 0 0 0 rgba(0, 191, 255, 0); }
+      }
+      @keyframes combo-flash-green {
+        0% { box-shadow: inset 0 0 0 0 rgba(76, 175, 80, 0); }
+        50% { box-shadow: inset 0 0 100px 20px rgba(76, 175, 80, 0.5); }
+        100% { box-shadow: inset 0 0 0 0 rgba(76, 175, 80, 0); }
+      }
+      @keyframes combo-flash-orange {
+        0% { box-shadow: inset 0 0 0 0 rgba(255, 165, 0, 0); }
+        50% { box-shadow: inset 0 0 100px 20px rgba(255, 165, 0, 0.5); }
+        100% { box-shadow: inset 0 0 0 0 rgba(255, 165, 0, 0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "vite": "https://aistudiocdn.com/vite@^7.1.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
