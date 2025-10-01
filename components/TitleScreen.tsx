@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Button from './ui/Button';
-import { playBGM, stopBGM } from '../constants/assets';
+import { initBGM, stopBGM } from '../constants/assets';
 
 interface TitleScreenProps {
   onGameStart: () => void;
@@ -10,7 +10,7 @@ interface TitleScreenProps {
 const TitleScreen: React.FC<TitleScreenProps> = ({ onGameStart, onShowRanking }) => {
   // タイトルBGM再生
   useEffect(() => {
-    playBGM('title'); // タイトルBGM
+    initBGM('title'); // ユーザー操作まで待機
     return () => stopBGM(); // 画面切り替え時に停止
   }, []);
 

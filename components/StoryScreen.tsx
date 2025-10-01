@@ -43,7 +43,7 @@ const StoryScreen: React.FC<StoryScreenProps> = ({ script, onComplete }) => {
   return (
     <div
       className="w-full h-full bg-cover bg-center flex flex-col justify-end"
-      style={{ backgroundImage: "url('/image/office.jpg')" }}
+      style={{ backgroundImage: "url('/image/office.png')" }}
       onClick={nextDialogue}
     >
       <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center p-16 pointer-events-none">
