@@ -50,7 +50,7 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onGameStart, onShowRanking })
           >
             アンクスHPへ
           </a>
-          <Button onClick={handleExit}>終了</Button>
+          
         </div>
       </div>
     </div>

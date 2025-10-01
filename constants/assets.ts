@@ -2,6 +2,11 @@
 let bgmAudio: HTMLAudioElement | null = null;
 let userInteracted = false;
 
+export const playTypingSound = () => {
+  const audio = new Audio('/music/key.mp3');
+  audio.play();
+};
+
 export const initBGM = (track: 'title' | 'story' | 'game') => {
   const startBGM = () => {
     userInteracted = true;
