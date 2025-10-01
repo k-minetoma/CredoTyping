@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Button from './ui/Button';
-import { playConfirmSound, playBGM, stopBGM } from '../constants/assets';
+import { playBGM, stopBGM } from '../constants/assets';
 
 interface TitleScreenProps {
   onGameStart: () => void;
@@ -14,17 +14,17 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onGameStart, onShowRanking })
   }, []);
 
   const handleStart = () => {
-    playConfirmSound();
+    
     onGameStart();
   };
 
   const handleRanking = () => {
-    playConfirmSound();
+    
     onShowRanking();
   };
   
   const handleExit = () => {
-    playConfirmSound();
+    
     // In a real web app, we might just navigate away or close a modal.
     // For this environment, we can just log it.
     console.log("Exit game");
@@ -52,11 +52,11 @@ const TitleScreen: React.FC<TitleScreenProps> = ({ onGameStart, onShowRanking })
         <Button onClick={handleStart}>ゲーム開始</Button>
         <Button onClick={handleRanking}>スコア確認</Button>
         <a 
-            href="https://www.anx.co.jp/" 
+            href="https://www.ankusu.com/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className={linkButtonClasses}
-            onClick={playConfirmSound}
+            
         >
             アンクスHPへ
         </a>
